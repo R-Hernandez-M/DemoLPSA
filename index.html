@@ -787,6 +787,27 @@ for(var cardLanding=document.querySelectorAll(".btn-card-grande"),i=0;i<cardLand
 		}
 	};
 </script>
+
+	<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DKd00000CKPwE',
+				'LPSA_Demo_PAD',
+				'https://si1739211204296.my.site.com/ESWLPSADemoPAD1754450097411',
+				{
+					scrt2URL: 'https://si1739211204296.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://si1739211204296.my.site.com/ESWLPSADemoPAD1754450097411/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
 <script type='text/javascript' src='https://si1739211204296.my.site.com/ESWMessagingEmbeddedCha1754161657022/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 	<div id="cdk-describedby-message-container" class="cdk-visually-hidden" style="visibility: hidden;">
 		<div id="cdk-describedby-message-0" role="tooltip">Ruben Arturo, Soto Navarrete</div>
