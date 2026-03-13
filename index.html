@@ -2,28 +2,25 @@
 <body>
     <img src="./image.png" alt="My Image" />
 
-    <script type='text/javascript'>
-        function initEmbeddedMessaging() {
-            try {
-                embeddedservice_bootstrap.settings.language = 'en_US'; 
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'es_MX'; // For example, enter 'en' or 'en-US'
 
-                embeddedservice_bootstrap.init(
-                    '00DKd00000CKPwE',
-                    'Testing_embedded_Chat',
-                    'https://si1739211204296.my.site.com/ESWTestingembeddedChat1754160952523',
-                    {
-                        scrt2URL: 'https://si1739211204296.my.salesforce-scrt.com'
-                    }
-                );
-            } catch (err) {
-                console.error('Error loading Embedded Messaging: ', err);
-            }
-        };
-    </script>
-    
-    <script type='text/javascript' 
-            src='https://si1739211204296.my.site.com/ESWTestingembeddedChat1754160952523/assets/js/bootstrap.min.js' 
-            onload='initEmbeddedMessaging()'>
-    </script>
+			embeddedservice_bootstrap.init(
+				'00DKd00000CKPwE',
+				'DEMO_SIGDO_KOPPERS',
+				'https://si1739211204296.my.site.com/ESWDEMOSIGNOKOPPERS1773321722290',
+				{
+					scrt2URL: 'https://si1739211204296.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://si1739211204296.my.site.com/ESWDEMOSIGNOKOPPERS1773321722290/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
 </body>
 </html>
